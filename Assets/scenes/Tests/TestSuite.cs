@@ -37,8 +37,8 @@ namespace Tests
         public void TestSqrRt()
         {
             // Use the Assert class to test conditions
-            result = Calculator.CalculatePair(25, 0, "√");
-            Assert.AreEqual(result, 5);
+            result = Calculator.CalculatePair(16, 0, "√");
+            Assert.AreEqual(result, 4);
         }
 
         // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
@@ -50,8 +50,8 @@ namespace Tests
             // Use yield to skip a frame.
             yield return null;
 
-            result = Calculator.CalculatePair(25, 0, "√");
-            Assert.AreEqual(result, 5);
+            result = Calculator.CalculatePair(16, 0, "√");
+            Assert.AreEqual(result, 4);
         }
 
         //Power
@@ -59,8 +59,8 @@ namespace Tests
         public void TestPower()
         {
             // Use the Assert class to test conditions
-            result = Calculator.CalculatePair(2, 2, "^");
-            Assert.AreEqual(result, 4);
+            result = Calculator.CalculatePair(5, 2, "^");
+            Assert.AreEqual(result, 25);
         }
 
         // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
@@ -72,8 +72,8 @@ namespace Tests
             // Use yield to skip a frame.
             yield return null;
 
-            result = Calculator.CalculatePair(2, 2, "^");
-            Assert.AreEqual(result, 4);
+            result = Calculator.CalculatePair(5, 2, "^");
+            Assert.AreEqual(result, 25);
         }
     }
 }
